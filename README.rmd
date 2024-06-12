@@ -1,1 +1,153 @@
-"Contenu du fichier" 
+# Gestion de Parc Automobile
+
+## Objectif du Projet
+
+Le projet "Gestion de Parc Automobile" vise à créer une application complète pour gérer efficacement un parc de véhicules divers tels que des voitures, motos, engins de BTP, etc. L'application permet d'assurer la gestion des véhicules, des conducteurs, des missions, des entretiens, des pannes, des accidents, des contrats et des garanties. Elle fournit également des outils d'analyse et de prédiction pour optimiser la gestion du parc.
+
+## Fonctionnalités
+
+### Gestion des Véhicules
+
+- Ajout, modification, suppression et consultation de véhicules.
+- Catégorisation par type (voiture, moto, engin BTP, etc.).
+- Historique des entretiens et réparations.
+- Gestion des documents associés (carte grise, assurance, etc.).
+- Suivi de la consommation de carburant et des coûts associés.
+- Alerte pour la validité des assurances, validité vidange et autres alertes personnalisables.
+- Gestion des véhicules de particuliers.
+
+### Gestion des Conducteurs
+
+- Ajout, modification, suppression et consultation de conducteurs.
+- Assignation de véhicules à des conducteurs.
+- Suivi des permis de conduire et des infractions.
+
+### Planification et Gestion des Missions
+
+- Planification des missions et des trajets.
+- Suivi des itinéraires et des kilométrages.
+- Notifications pour les entretiens et les contrôles techniques.
+- Types de missions (avec ou sans chauffeur).
+
+### Suivi des Entretiens et des Réparations
+
+- Historique des entretiens.
+- Ajout d'entretiens et de réparations.
+- Alertes pour les entretiens à venir.
+
+### Gestion des Pannes et des Accidents
+
+- Enregistrement des pannes.
+- Enregistrement des accidents.
+- Détails des réparations et des coûts.
+
+### Suivi de la Consommation et des Coûts
+
+- Ajout de la consommation de carburant.
+- Suivi des coûts associés.
+
+### Gestion des Contrats et des Garanties
+
+- Suivi des contrats de location (avec ou sans chauffeur).
+- Suivi des garanties des véhicules et des pièces.
+- Alertes pour les dates d'expiration.
+
+### Analyse et Prédiction
+
+- Analyse de la performance des véhicules.
+- Prédiction des entretiens futurs basés sur l'historique des données.
+
+### Gestion des Utilisateurs et des Rôles
+
+- Gestion des utilisateurs avec différents rôles (administrateur, gestionnaire, conducteur).
+- Sécurité et authentification (authentification à deux facteurs, par exemple).
+
+## Modèle de Données
+
+Le modèle de données est structuré comme suit :
+
+- `Vehicule`: contient des informations sur chaque véhicule.
+- `TypeVehicule`: catégorise les véhicules par type.
+- `MarqueVehicule`: informations sur la marque des véhicules.
+- `Conducteur`: informations sur les conducteurs.
+- `ProprietaireVehicule`: informations sur les propriétaires des véhicules.
+- `Document`: documents associés aux véhicules (carte grise, assurance, etc.).
+- `TypeDocument`: types de documents pour plus de flexibilité.
+- `Entretien`: historique des entretiens et réparations des véhicules.
+- `Consommation`: suivi de la consommation de carburant et des coûts.
+- `Alerte`: alertes pour les entretiens, assurances, etc.
+- `Infraction`: suivi des infractions des conducteurs.
+- `Affectation`: assignation de véhicules aux conducteurs.
+- `Mission`: planification et suivi des missions et trajets.
+- `Panne`: enregistrement des pannes des véhicules.
+- `Accident`: enregistrement des accidents des véhicules.
+- `ContratLocation`: gestion des contrats de location des véhicules.
+- `Garantie`: suivi des garanties des véhicules et des pièces.
+- `Versement`: suivi des versements des conducteurs.
+- `Client`: informations sur les clients louant les véhicules.
+- `TypeMission`: types de missions pour plus de flexibilité.
+
+## Structure des Menus
+
+### Menu Principal
+
+1. **Tableau de Bord**
+   - Vue d'ensemble du parc automobile
+   - Statistiques clés (nombre de véhicules, entretiens récents, alertes actives, etc.)
+
+2. **Gestion des Véhicules**
+   - Ajouter un véhicule
+   - Modifier/Supprimer un véhicule
+   - Consulter les véhicules
+   - Catégorisation par type (voiture, moto, engin BTP, etc.)
+   - Gestion des documents associés (carte grise, assurance, etc.)
+
+3. **Gestion des Conducteurs**
+   - Ajouter un conducteur
+   - Modifier/Supprimer un conducteur
+   - Consulter les conducteurs
+   - Suivi des permis de conduire et des infractions
+
+4. **Planification et Gestion des Missions**
+   - Planification des missions et des trajets
+   - Suivi des itinéraires et des kilométrages
+   - Types de missions (avec ou sans chauffeur)
+
+5. **Suivi des Entretiens et des Réparations**
+   - Historique des entretiens
+   - Ajouter un entretien ou une réparation
+   - Alertes pour les entretiens à venir
+
+6. **Gestion des Pannes et des Accidents**
+   - Enregistrement des pannes
+   - Enregistrement des accidents
+   - Détails des réparations et des coûts
+
+7. **Suivi de la Consommation et des Coûts**
+   - Ajouter une consommation de carburant
+   - Suivi des coûts associés
+
+8. **Gestion des Contrats et des Garanties**
+   - Ajouter un contrat de location
+   - Consulter les contrats
+   - Ajouter une garantie
+   - Consulter les garanties
+
+9. **Gestion des Utilisateurs et des Rôles**
+   - Ajouter un utilisateur
+   - Modifier/Supprimer un utilisateur
+   - Gestion des rôles et permissions
+   - Sécurité et authentification
+
+10. **Analyse et Rapports**
+    - Générer des rapports
+    - Analyse de la performance
+    - Prédiction des entretiens
+
+## Installation et Configuration
+
+1. **Cloner le projet :**
+
+   ```bash
+   git clone https://github.com/Diabiga/freeAuto.git
+   
